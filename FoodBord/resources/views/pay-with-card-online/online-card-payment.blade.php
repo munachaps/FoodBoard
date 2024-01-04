@@ -1,10 +1,3 @@
-<?php
-
-use Foodboard\Config;
-
-require_once __DIR__ . '/Config/Config.php';
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +58,7 @@ require_once __DIR__ . '/Config/Config.php';
                 <div class="row">
                     <div class="col-lg-3 col-6">
                         <div id="logo">
-                            <h1><a href="https://ultimatewebsolutions.net/foodboard/" title="FoodBoard">FoodBoard</a></h1>
+                            <h1><a href="{{route('index')}}" title="FoodBoard">FoodBoard</a></h1>
                         </div>
                     </div>
                     <div class="col-lg-9 col-6">
@@ -76,7 +69,7 @@ require_once __DIR__ . '/Config/Config.php';
                         <!-- Menu -->
                         <nav id="menu" class="main-menu">
                             <ul>
-                                <li><span><a href="https://ultimatewebsolutions.net/foodboard/">Home</a></span></li>
+                                <li><span><a href="{{route('index')}}">Home</a></span></li>
                                 <li>
                                     <span><a href="#">Order <i class="fa fa-chevron-down"></i></a></span>
                                     <ul>
@@ -502,7 +495,7 @@ require_once __DIR__ . '/Config/Config.php';
                                         <div class="order-header">
                                             <h3>Order Summary 2/2</h3>
                                         </div>
-                                        <div id="personalData" data-consumer-key='<?php echo Config::STRIPE_PUBLISHABLE_KEY; ?>' data-create-order-url='<?php echo Config::STRIPE_CREATE_ORDER_URL; ?>' data-return-url='<?php echo Config::THANKYOU_URL; ?>' data-currency='<?php echo Config::CURRENCY; ?>'>
+                                        <div id="personalData" >
                                             <div class="order-body">
                                                 <div class="row">
                                                     <div class="col-md-12">

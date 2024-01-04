@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Food order wizard with online payment">
-	<meta name="author" content="UWS">
+	<meta name="author" content="">
 	<title>FoodBoard | Food delivery dashboard</title>
 
 	<!-- Favicon -->
@@ -58,7 +58,7 @@
 				<div class="row">
 					<div class="col-lg-3 col-6">
 						<div id="logo">
-							<h1><a href="https://ultimatewebsolutions.net/foodboard/" title="FoodBoard">FoodBoard</a></h1>
+							<h1><a href="{{route('index')}}" title="FoodBoard">FoodBoard</a></h1>
 						</div>
 					</div>
 					<div class="col-lg-9 col-6">
@@ -69,7 +69,7 @@
 						<!-- Menu -->
 						<nav id="menu" class="main-menu">
 							<ul>
-								<li><span><a href="https://ultimatewebsolutions.net/foodboard/">Home</a></span></li>
+								<li><span><a href="{{route('index')}}">Home</a></span></li>
 								<li>
 									<span><a href="#">Order <i class="fa fa-chevron-down"></i></a></span>
 									<ul>
@@ -107,7 +107,7 @@
 				<div class="content">
 					<h1 class="animated-element">FoodBoard</h1>
 					<p class="animated-element">Food order wizard with online payment.</p>
-					<a href="pay-with-card-online/" class="btn-1 medium animated-element">Get Started</a>
+					<a href="{{route('pay-online-menu')}}" class="btn-1 medium animated-element">Get Started</a>
 					<a href="#orderFood" class="mouse-frame nice-scroll">
 						<div class="mouse"></div>
 					</a>
@@ -125,7 +125,7 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-6 animated-element">
-							<a href="pay-with-card-online/" class="service-link">
+							<a href="{{route('online-menu')}}" class="service-link">
 								<div class="box text-center">
 									<div class="icon d-flex align-items-end"><i class="icon icon-credit-card2"></i></div>
 									<h3 class="service-title">Pay Online</h3>
@@ -134,7 +134,7 @@
 							</a>
 						</div>
 						<div class="col-lg-6 animated-element">
-							<a href="pay-with-cash-on-delivery/" class="service-link">
+							<a href="{{route('cash-online-menu')}} " class="service-link">
 								<div class="box text-center">
 									<div class="icon d-flex align-items-end"><i class="icon icon-wallet"></i></div>
 									<h3 class="service-title">Pay with cash</h3>
@@ -213,7 +213,11 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<div id="copy">© 2021 FoodBoard</div>
+						<div id="copy">© 
+                       @php
+                           echo date('Y')
+                       @endphp 
+                    </div>
 					</div>
 				</div>
 			</div>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ViewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('index');
+
+Route::get('/online-menu',[ViewsController::class,'index'])->name('online-menu');
+Route::get('/cash-online-menu',[ViewsController::class,'cashPayments'])->name('cash-online-menu');
+Route::get('/pay-online-menu',[ViewsController::class,'onlinePayments'])->name('pay-online-menu');
+

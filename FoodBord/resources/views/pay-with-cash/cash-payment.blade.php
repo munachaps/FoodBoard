@@ -147,7 +147,7 @@
 								<div id="gridItem01" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item pizza">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/01.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/01.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem01" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Aspen</h3>
@@ -174,7 +174,7 @@
 									<div class="item-body">
 										<figure>
 											<div class="ribbon-discount"><span>- 10%</span></div>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/02.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/02.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem02" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Bolognese</h3>
@@ -203,7 +203,7 @@
 								<div id="gridItem03" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item  pizza">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/03.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/03.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem03" class="item-body-link modal-opener">
 												<small class="red">Hot</small>
 												<div class="item-title">
@@ -230,7 +230,7 @@
 								<div id="gridItem04" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item  pizza">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/04.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/04.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem04" class="item-body-link modal-opener">
 												<small>Vegan</small>
 												<div class="item-title">
@@ -257,7 +257,7 @@
 								<div id="gridItem05" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item  vegetarian">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/05.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/04.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem05" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Caesar Salad</h3>
@@ -279,7 +279,7 @@
 								<div id="gridItem06" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item  vegetarian">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/06.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/06.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem06" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Greek Salad</h3>
@@ -301,7 +301,7 @@
 								<div id="gridItem07" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item  vegetarian">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/07.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/07.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem07" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Grilled Salmon</h3>
@@ -323,7 +323,7 @@
 								<div id="gridItem08" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item  vegetarian">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/08.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/08.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem08" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Sushi</h3>
@@ -345,7 +345,7 @@
 								<div id="gridItem09" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item burger">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/09.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src=".../img/bg/09.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem09" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Beef Burger</h3>
@@ -367,7 +367,7 @@
 								<div id="gridItem10" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item burger">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/10.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/10.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem10" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Big Beef Burger</h3>
@@ -389,7 +389,7 @@
 								<div id="gridItem11" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item burger">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/11.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/11.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem11" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Chicken Burger</h3>
@@ -411,7 +411,7 @@
 								<div id="gridItem12" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item burger">
 									<div class="item-body">
 										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/12.jpg" class="img-fluid lazy" alt="">
+											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/bg/12.jpeg" class="img-fluid lazy" alt="">
 											<a href="#modalDetailsItem12" class="item-body-link modal-opener">
 												<small class="red">Hot</small>
 												<div class="item-title">

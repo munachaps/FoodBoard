@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewsController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,8 @@ use App\Http\Controllers\ViewsController;
 Route::get('/', function () {
     return view('welcome');
 })->name('index');
-
+Route::get('/login',[AuthController::class,'login'])->name('login');
+Route::get('/register',[AuthController::class,'register'])->name('register');
 Route::get('/online-menu',[ViewsController::class,'index'])->name('online-menu');
 Route::get('/cash-online-menu',[ViewsController::class,'cashPayments'])->name('cash-online-menu');
 Route::get('/pay-online-menu',[ViewsController::class,'onlinePayments'])->name('pay-online-menu');

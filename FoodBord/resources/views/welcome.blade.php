@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Food order wizard with online payment">
+	<meta name="description" content="Keinz order wizard with online payment">
 	<meta name="author" content="">
-	<title>FoodBoard | Food delivery dashboard</title>
+	<title>Keinz | Online Food Ordering</title>
 
 	<!-- Favicon -->
 	<link href="img/favicon.png" rel="shortcut icon">
@@ -56,8 +56,8 @@
 			<!-- Hero -->
 			<div class="hero-home bg-mockup hero-bottom-border">
 				<div class="content">
-					<h1 class="animated-element">FoodBoard</h1>
-					<p class="animated-element">Food order wizard with online payment.</p>
+				<img src="img/foodlogo.jpeg" ">
+					<p class="animated-element"> Food ordering platform with online payment.</p>
 					<a href="{{route('pay-online-menu')}}" class="btn-1 medium animated-element">Get Started</a>
 					<a href="#orderFood" class="mouse-frame nice-scroll">
 						<div class="mouse"></div>
@@ -106,7 +106,7 @@
 								<small>FoodBoard Delivery</small>
 								<h2>FoodBoard</h2>
 								<p>Food order wizard with online payment.</p>
-								<a href="faq.html" class="btn-1">FAQ</a>
+								<a href="" class="btn-1">FAQ</a>
 							</div>
 						</div>
 					</div>
@@ -159,7 +159,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<ul id="subFooterLinks">
-							<li><a href="https://themeforest.net/user/ultimatewebsolutions" target="_blank">With <i class="fa fa-heart pulse"></i> by UWS</a></li>
+							<li><a href="https://themeforest.net/user/ultimatewebsolutions" target="_blank">With <i class="fa fa-heart pulse"></i> </a></li>
 							<li><a href="pdf/terms.pdf" target="_blank">Terms and conditions</a></li>
 						</ul>
 					</div>

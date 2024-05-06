@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-lg-3 col-6">
             <div id="">
-                <h1><a href="{{route('index')}}" title="FoodBoard">FoodBoard</a></h1>
+                <h1><a href="{{route('index')}}" title="Keinz"> <img src="img/foodlogo.jpeg" height="100" width="100"> </a></h1>
             </div>
         </div>
         <div class="col-lg-9 col-6">
@@ -28,7 +28,7 @@
                                 
                             </li>
                             <li>
-                                <span><a href="#">Pay with cash</a></span>
+                                <span><a href="">Pay with cash</a></span>
                                 
                             </li>
                         </ul>

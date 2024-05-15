@@ -85,7 +85,7 @@
 							</a>
 						</div>
 						<div class="col-lg-6 animated-element">
-							<a href="{{route('cash-online-menu')}} " class="service-link">
+							<a href="{{route('cash-online-menu')}}" class="service-link">
 								<div class="box text-center">
 									<div class="icon d-flex align-items-end"><i class="icon icon-wallet"></i></div>
 									<h3 class="service-title">Pay with cash</h3>

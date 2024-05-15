@@ -24,11 +24,11 @@
                         <span><a href="#">Order <i class="fa fa-chevron-down"></i></a></span>
                         <ul>
                             <li>
-                                <span><a href="">Pay online</a></span>
+                                <span><a href="{{route('online-menu')}}">Pay online</a></span>
                                 
                             </li>
                             <li>
-                                <span><a href="">Pay with cash</a></span>
+                                <span><a href="{{route('cash-online-menu')}} ">Pay with cash</a></span>
                                 
                             </li>
                         </ul>

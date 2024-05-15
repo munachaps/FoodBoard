@@ -4,30 +4,42 @@ namespace App\Http\Controllers;
 
 use App\Models\Reviews;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class ReviewsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
+    public function reviewSuccess(){
+        return view('/review_success');
+    }
     public function reviews(){
         return view('/reviews');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+            $validator = Validator::make($request->all(), [
+                'phone_number' => 'required|',
+                'email' => 'required',
+                'comments'=>'required'
+            ],    
+        );
+        if(!$validator){
+            return redirect()->with('Missing details');
+        }
+
+        $reviews = Reviews::create([ 
+            'email' => $request->input('email'),
+            'phone_number' => $request->input('phone_number'),
+            'comments' => $request->input('comments'),
+          ]);  
+
+          $reviews->save();
+
+          return redirect()->route('review-success');
     }
 
     /**

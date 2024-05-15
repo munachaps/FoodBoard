@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from colorlib.com/polygon/admindek/default/dashboard-crm.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2019 16:08:30 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
     <title>KeinzFoodOrdering| Home</title>
 
-
-    <!--[if lt IE 10]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -540,6 +533,7 @@
 
     <script src="js/pcoded.min.js" type="c72f127118858a7921be8404-text/javascript"></script>
     <script src="js/vertical-layout.min.js" type="c72f127118858a7921be8404-text/javascript"></script>
+    
 
 <script type="c72f127118858a7921be8404-text/javascript" src="js/widget-chart.js"></script>
 

@@ -143,31 +143,92 @@
 
             </div>
 
-            <div class="col-md-12 col-xl-12">
-                <div class="card sale-card">
-                    <div class="card-header">
-                        <h5>Total Leads Revenue</h5>
-                    </div>
-                    <div class="card-block text-center">
-                        <div id="tot-rev-chart" class="tot-rev-chart chart-shadow st-cir-chart"
-                            style="width:100px;height:100px">
-                            <h3>120</h3>
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Doughnut Chart</h5>
+                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
                         </div>
-                        <h6 class="m-t-40">Today’s Lead Sales</h6>
-                        <h3 class="f-w-700 m-b-40">100</h3>
-                        <div class="row">
-                            <div class="col-4">
-                                <p class="m-b-5">Target</p>
-                                <h3 class="f-w-700 text-c-yellow">$1253</h3>
-                            </div>
-                            <div class="col-4">
-                                <p class="m-b-5">Last Month</p>
-                                <h3 class="f-w-700 text-c-yellow">$795</h3>
-                            </div>
-                            <div class="col-4">
-                                <p class="m-b-5">This Month</p>
-                                <h3 class="f-w-700 text-c-yellow">$978</h3>
-                            </div>
+                        <div class="card-block">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Radar Chart</h5>
+                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                        </div>
+                        <div class="card-block">
+                            <canvas id="radarChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Polar Chart</h5>
+                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                        </div>
+                        <div class="card-block">
+                            <canvas id="polarChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Pie Chart</h5>
+                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                        </div>
+                        <div class="card-block">
+                            <canvas id="pieChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Bar Chart</h5>
+                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                        </div>
+                        <div class="card-block">
+                            <canvas id="barChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Bubble Chart</h5>
+                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                        </div>
+                        <div class="card-block">
+                            <canvas id="bubblechart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Scales Chart</h5>
+                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                        </div>
+                        <div class="card-block">
+                            <canvas id="stancechart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Time Scale Chart</h5>
+                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                        </div>
+                        <div class="card-block">
+                            <canvas id="timescalechart" width="400" height="400"></canvas>
                         </div>
                     </div>
                 </div>

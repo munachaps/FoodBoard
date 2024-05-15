@@ -32,7 +32,8 @@ Route::get('home',[WelcomeController::class,'home'])->name('home');
 Route::get('addreview',[WelcomeController::class,'addreview'])->name('addreview');
 Route::get('contact',[WelcomeController::class,'contact'])->name('contact');
 Route::get('reviews',[ReviewsController::class,'reviews'])->name('reviews');
-
+Route::post('handlecomment',[ReviewsController::class,'store'])->name('handle_comment');
+Route::get('review-success',[ReviewsController::class,'reviewSuccess'])->name('review-success');
 
 Route::middleware(["auth:admin"])->group(function () {
     Route::get('/admin/home', [HomeController::class,'index'])->name('admin.home');

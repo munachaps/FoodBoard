@@ -54,59 +54,23 @@
 		<!-- Main -->
 		<main>
 			<!-- Hero -->
+            <div class="row" style="margin-top: 10%">
+
+            </div>
 			<div class="hero-home bg-mockup hero-bottom-border">
 				<div class="content">
-				<img src="img/foodlogo.jpeg">
-					<p class="animated-element"> Food ordering platform with online payment.</p>
-					
-					<a href="#orderFood" class="mouse-frame nice-scroll">
-						<div class="mouse"></div>
-					</a>
+                    <div class="col-lg-8 animated-element">
+                        <div class="box text-left ">
+                            <div class="main-title">
+                                <span><em></em></span>
+                                <h2 id="orderFood">Thank you for the positive comments</h2>
+                                <p>Keep ordering food from us</p>
+                            </div>
+                        </div>
+                </div>
 				</div>
 			</div>
 			<!-- Hero End -->
-
-			<!-- Services -->
-			<div class="services">
-				<div class="container">
-					<div class="main-title">
-						<span><em></em></span>
-						<h2 id="orderFood">Order Food</h2>
-						<p>Let us hear your thoughts</p>
-					</div>
-					<div class="row">
-						<div class="col-lg-8 animated-element">
-								<div class="box text-left ">
-									<form action="{{route('handle_comment')}}" method="POST" >
-										@csrf
-                                        <label for="phone_number">Phone number :</label>
-                                        <input type="text" class="form-control" name="phone_number" placeholder="Enter phone number" required>
-                                        <hr>
-                                        <label for="phone_number">Email :</label>
-                                        <input type="text" class="form-control" name="email" placeholder="Enter email" required>
-                                        <hr>
-                                        <label for="comments">Write your comments:</label>
-                                        <textarea name="comments" class="form-control"  id="" cols="30" rows="10"></textarea>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                               <input type="submit" class="btn-1" name="" id="">
-                                            </div>
-                                        </div>
-                                    </form>
-								</div>
-
-                               
-							
-						</div>
-					
-					</div>
-				</div>
-			</div>
-			<!-- Services End -->
-
-			
-
 			<div class="banner animated-element">
 				<div class="container">
 					<div class="content">

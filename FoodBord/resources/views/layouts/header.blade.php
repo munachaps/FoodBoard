@@ -34,7 +34,6 @@
                         </ul>
                     </li>
                     <li><span><a href="{{route('login')}}">Login</a></span></li>
-                    <li><span><a href="{{route('register')}}">Register</a></span></li>
                 </ul>
             </nav>
             <!-- Menu End -->

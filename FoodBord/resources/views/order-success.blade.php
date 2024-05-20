@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,59 +55,31 @@
 		<!-- Main -->
 		<main>
 			<!-- Hero -->
+            <div class="row" style="margin-top: 10%">
+
+            </div>
 			<div class="hero-home bg-mockup hero-bottom-border">
 				<div class="content">
-				<img src="img/foodlogo.jpeg">
-					<p class="animated-element"> Food ordering platform with online payment.</p>
-					<a href="{{route('pay-online-menu')}}" class="btn-1 medium animated-element">Get Started</a>
-					<a href="#orderFood" class="mouse-frame nice-scroll">
-						<div class="mouse"></div>
-					</a>
+                    <div class="col-lg-8 animated-element">
+                        <div class="box text-left ">
+                            <div class="main-title">
+                                <span><em></em></span>
+                                <h2 id="orderFood">Order Successfully Proccessed</h2>
+
+                                <p>Keep ordering food from us</p>
+                            </div>
+                        </div>
+                </div>
 				</div>
 			</div>
 			<!-- Hero End -->
-
-			<!-- Services -->
-			<div class="services">
-				<div class="container">
-					<div class="main-title">
-						<span><em></em></span>
-						<h2 id="orderFood">Order Food</h2>
-						<p>Choosing one of the payment methods</p>
-					</div>
-					<div class="row">
-						<div class="col-lg-6 animated-element">
-							<a href="{{route('online-menu')}}" class="service-link">
-								<div class="box text-center">
-									<div class="icon d-flex align-items-end"><i class="icon icon-credit-card2"></i></div>
-									<h3 class="service-title">Pay Online</h3>
-									<p>and wait for delivery</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-6 animated-element">
-							<a href="{{route('cash-online-menu')}}" class="service-link">
-								<div class="box text-center">
-									<div class="icon d-flex align-items-end"><i class="icon icon-wallet"></i></div>
-									<h3 class="service-title">Pay with cash</h3>
-									<p>when food is arrived to you</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Services End -->
-
-			
-
 			<div class="banner animated-element">
 				<div class="container">
 					<div class="content">
 						<div class="mask">
 							<div class="textbox">
-								<small>FoodBoard Delivery</small>
-								<h2>FoodBoard</h2>
+								<small>Keinz Delivery</small>
+								<h2>Keinz</h2>
 								<p>Food order wizard with online payment.</p>
 								<a href="" class="btn-1">FAQ</a>
 							</div>
@@ -120,7 +93,61 @@
 		<!-- Main End -->
 
 		<!-- Footer -->
-		@include('layouts.footer')
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="footer-heading">Menu Links</h5>
+						<ul class="list-unstyled nav-links">
+							<li><i class="fa fa-angle-right"></i> <a href="{{route('home')}}" class="footer-link">Home</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="{{route('addreview')}}" class="footer-link">Review</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="{{route('contact')}}" class="footer-link">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5 class="footer-heading">Order Wizard</h5>
+						<ul class="list-unstyled nav-links">
+							<li><i class="fa fa-angle-right"></i> <a href="{{route('online-menu')}}" class="footer-link">Pay online</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="{{route('cash-online-menu')}}" class="footer-link">Pay with cash on delivery</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5 class="footer-heading">Contacts</h5>
+						<ul class="list-unstyled contact-links">
+							<li><i class="icon icon-map-marker"></i><a href="https://goo.gl/maps/vKgGyZe2JSRLDnYH6" class="footer-link" target="_blank">Address: 1234 Street Name, Lebanon   </a>
+							</li>
+							<li><i class="icon icon-envelope3"></i><a href="mailto:info@yourdomain.com" class="footer-link">Mail: info@keinz.com</a></li>
+							<li><i class="icon icon-phone2"></i><a href="tel:+3630123456789" class="footer-link">Phone: +3630123456789</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5 class="footer-heading">Find Us On</h5>
+						<ul class="list-unstyled social-links">
+							<li><a href="https://facebook.com" class="social-link" target="_blank"><i class="icon icon-facebook"></i></a></li>
+							<li><a href="https://twitter.com" class="social-link" target="_blank"><i class="icon icon-twitter"></i></a></li>
+							<li><a href="https://instagram.com" class="social-link" target="_blank"><i class="icon icon-instagram"></i></a></li>
+							<li><a href="https://pinterest.com" class="social-link" target="_blank"><i class="icon icon-pinterest"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-8">
+						<ul id="subFooterLinks">
+							<li><a href="https://themeforest.net/user/ultimatewebsolutions" target="_blank">With <i class="fa fa-heart pulse"></i> </a></li>
+							<li><a href="pdf/terms.pdf" target="_blank">Terms and conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div id="copy">© 
+                       @php
+                           echo date('Y')
+                       @endphp 
+                    </div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<!-- Footer End -->
 
 	</div>

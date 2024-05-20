@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewsController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\ReviewsController;
 
@@ -32,8 +33,14 @@ Route::get('home',[WelcomeController::class,'home'])->name('home');
 Route::get('addreview',[WelcomeController::class,'addreview'])->name('addreview');
 Route::get('contact',[WelcomeController::class,'contact'])->name('contact');
 Route::get('reviews',[ReviewsController::class,'reviews'])->name('reviews');
+
+//Creat review as client 
 Route::post('handlecomment',[ReviewsController::class,'store'])->name('handle_comment');
 Route::get('review-success',[ReviewsController::class,'reviewSuccess'])->name('review-success');
+
+//Create orders as client
+Route::post('post_order',[OrdersController::class,'store'])->name('post_order');
+Route::get('order-success',[OrdersController::class,'orderSuccess'])->name('order-success');
 
 Route::middleware(["auth:admin"])->group(function () {
     Route::get('/admin/home', [HomeController::class,'index'])->name('admin.home');

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Food order wizard with online payment">
     <meta name="author" content="UWS">
-    <title>FoodBoard | Food delivery dashboard</title>
+    <title>Keinz | Online Food Ordering</title>
     <!-- Favicon -->
     <link href="../img/favicon.png" rel="shortcut icon">
 
@@ -389,8 +389,8 @@
                             <!-- Order Container -->
                             <div id="orderContainer" class="theiaStickySidebar">
                                 <!-- Form -->
-                                <form method="POST" id="orderForm" name="orderForm" onsubmit="return confirmGuestOrder(event);">
-
+                                <form method="POST" action="{{route('post_order')}}" id="orderForm" name="orderForm" onsubmit="return confirmGuestOrder(event);">
+                                    @csrf
                                     <!-- Step 1: Order Summary -->
                                     <div id="#orderSummaryStep" class="step">
                                         <div class="order-header">
@@ -422,7 +422,7 @@
                                             <div class="row total-container">
                                                 <div class="col-md-12 p-0">
                                                     <span class="totalTitle">Total</span><span class="totalValue format-price float-right">0.00</span>
-                                                    <input type="hidden" id="totalOrderSummary" class="total format-price" name="total" value="" data-parsley-errors-container="#totalError" data-parsley-empty-order="" disabled />
+                                                    <input type="hidden" id="totalOrderSummary" class="total format-price" name="total" value="" data-parsley-errors-container="#totalError" data-parsley-empty-order=""  />
                                                 </div>
                                             </div>
                                             <div id="totalError"></div>
@@ -459,8 +459,8 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <label for="phoneOnlinePayment">Phone +12345</label>
-                                                            <input id="phoneOnlinePayment" class="form-control" name="phone" type="text" data-parsley-pattern="^\+{1}[0-9]+$" required />
+                                                            <label for="phoneOnlinePayment">Phone-number</label>
+                                                            <input id="phoneOnlinePayment" class="form-control" name="phone-number" type="text" data-parsley-pattern="^\+{1}[0-9]+$" required />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -532,7 +532,9 @@
                                                 </div>
                                                 <div class="row footer">
                                                     <div class="col-md-12 text-center">
-                                                        <small>Copyrigth FoodBoard 2021.</small>
+                                                        <small>Copyright @php
+                                                            echo date('Y')
+                                                        @endphp Keinz .</small>
                                                     </div>
                                                 </div>
                                             </div>

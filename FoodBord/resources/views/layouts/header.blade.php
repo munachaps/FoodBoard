@@ -19,7 +19,7 @@
             <!-- Menu -->
             <nav id="menu" class="main-menu">
                 <ul>
-                    <li><span><a href="{{route('index')}}">Home</a></span></li>
+                    <li><span><a href="{{route('home')}}">Home</a></span></li>
                     <li>
                         <span><a href="#">Order <i class="fa fa-chevron-down"></i></a></span>
                         <ul>

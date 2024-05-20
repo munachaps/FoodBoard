@@ -38,7 +38,7 @@ class LoginController extends Controller
     }
 
     public function loginError(){
-        return view('admin.loginerror');
+        return view('/loginerror');
     }
 
     public function logout(Request $request) {

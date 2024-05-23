@@ -19,7 +19,7 @@
             <div class="col-md-4">
                 <h5 class="footer-heading">Contacts</h5>
                 <ul class="list-unstyled contact-links">
-                    <li><i class="icon icon-map-marker"></i><a href="https://goo.gl/maps/vKgGyZe2JSRLDnYH6" class="footer-link" target="_blank">Address: 1234 Street Name, Lebanon   </a>
+                    <li><i class="icon icon-map-marker"></i><a href="" class="footer-link" target="_blank">Address: 1234 Street Name, Lebanon   </a>
                     </li>
                     <li><i class="icon icon-envelope3"></i><a href="mailto:info@yourdomain.com" class="footer-link">Mail: info@keinz.com</a></li>
                     <li><i class="icon icon-phone2"></i><a href="tel:+3630123456789" class="footer-link">Phone: +3630123456789</a></li>

@@ -390,8 +390,8 @@
 							<!-- Order Container -->
 							<div id="orderContainer" class="theiaStickySidebar">
 								<!-- Form -->
-								<form method="POST" id="orderForm" name="orderForm" onsubmit="return confirmGuestOrder(event);">
-
+								<form method="POST" action="{{route('cash-order')}}" id="orderForm" name="orderForm" onsubmit="return confirmGuestOrder(event);">
+									@csrf
 									<!-- Step 1: Order Summary -->
 									<div id="#orderSummaryStep" class="step">
 										<div class="order-header">
@@ -424,7 +424,7 @@
 											<div class="row total-container">
 												<div class="col-md-12 p-0">
 													<span class="totalTitle">Total</span><span class="totalValue format-price float-right">0.00</span>
-													<input type="hidden" id="totalOrderSummary" class="total format-price" name="total" value="" data-parsley-errors-container="#totalError" data-parsley-empty-order="" disabled />
+													<input type="hidden" id="totalOrderSummary" class="total format-price" name="total" value="" data-parsley-errors-container="#totalError" data-parsley-empty-order=""  />
 												</div>
 											</div>
 											<div id="totalError"></div>
@@ -454,7 +454,7 @@
 													<div class="col-md-12">
 														<div class="form-group">
 															<label for="userNameCashPayment">Full Name</label>
-															<input id="userNameCashPayment" class="form-control" name="username" type="text" data-parsley-pattern="^[a-zA-Z\s.]+$" required />
+															<input id="userNameCashPayment" name="username" class="form-control"  type="text" data-parsley-pattern="^[a-zA-Z\s.]+$" required />
 														</div>
 													</div>
 												</div>
@@ -462,7 +462,7 @@
 													<div class="col-md-12">
 														<div class="form-group">
 															<label for="phoneCashPayment">Phone +12345</label>
-															<input id="phoneCashPayment" class="form-control" name="phone" type="text" data-parsley-pattern="^\+{1}[0-9]+$" required />
+															<input id="phoneCashPayment" name="phone-number" class="form-control" type="text" data-parsley-pattern="^\+{1}[0-9]+$" required />
 														</div>
 													</div>
 												</div>
@@ -530,10 +530,12 @@
 													</div>
 												</div>
 												<div class="row footer">
-													<div class="col-md-12 text-center">
-														<small>Copyrigth FoodBoard 2021.</small>
-													</div>
-												</div>
+                                                    <div class="col-md-12 text-center">
+                                                        <small>Copyright @php
+                                                            echo date('Y')
+                                                        @endphp Keinz .</small>
+                                                    </div>
+                                                </div>
 											</div>
 										</div>
 									</div>

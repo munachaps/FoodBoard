@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CashOrder;
 use App\Models\Orders;
 use App\Models\Reviews;
 use Illuminate\Http\Request;
@@ -30,7 +31,39 @@ class OrdersController extends Controller
         return redirect()->with('Missing details');
     }
 
-    $reviews = Orders::create([ 
+    $reviews = CashOrder::create([ 
+        'transfer' => $request->input('transfer'),
+        'total' => $request->input('total'),
+        'username' => $request->input('username'),
+        'phone-number' => $request->input('phone-number'),
+        'email' => $request->input('email'),
+        'address' => $request->input('address'),
+        'message' => $request->input('message'),
+        'terms' => $request->input('terms')
+      ]);  
+
+      $reviews->save();
+
+      return redirect()->route('order-success');
+    }
+
+    public function storeCashOrder(Request $request){
+        $validator = Validator::make($request->all(), [
+            'transfer' => 'required|',
+            'total' => 'required',
+            'username'=>'required',
+            'phone-number' => 'required|',
+            'email' => 'required',
+            'address'=>'required',
+            'message' => 'required|',
+            'terms' => 'required',
+        ],    
+    );
+    if(!$validator){
+        return redirect()->with('Missing details');
+    }
+
+    $reviews = CashOrder::create([ 
         'transfer' => $request->input('transfer'),
         'total' => $request->input('total'),
         'username' => $request->input('username'),
@@ -53,7 +86,7 @@ class OrdersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Orders $orders)
+    public function show(Orders   $orders)
     {
         //
     }

@@ -40,6 +40,7 @@ Route::get('review-success',[ReviewsController::class,'reviewSuccess'])->name('r
 
 //Create orders as client
 Route::post('post_order',[OrdersController::class,'store'])->name('post_order');
+Route::post('cash-order',[OrdersController::class,'storeCashOrder'])->name('cash-order');
 Route::get('order-success',[OrdersController::class,'orderSuccess'])->name('order-success');
 
 Route::middleware(["auth:admin"])->group(function () {

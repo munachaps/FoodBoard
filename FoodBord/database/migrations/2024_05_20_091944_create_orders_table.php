@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('transfer');
             $table->string('total');
             $table->string('username');
-            $table->string('phone-number');
+            $table->string('phone_number');
             $table->string('email');
             $table->string('address');
             $table->string('message');

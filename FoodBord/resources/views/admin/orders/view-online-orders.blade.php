@@ -8,7 +8,7 @@
                 <div class="page-header-title">
                     <i class="feather icon-server bg-c-blue"></i>
                     <div class="d-inline">
-                        <h5>Users Table</h5>
+                        <h5>Online Orders </h5>
                        
                     </div>
                 </div>
@@ -19,7 +19,7 @@
                         <li class="breadcrumb-item">
                             <a href="index.html"><i class="feather icon-home"></i></a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">Add System User</a>
+                        <li class="breadcrumb-item"><a href="#!">Update Orders</a>
                         </li>
                        
                     </ul>
@@ -43,26 +43,33 @@
                                     <tr>
                                         <th>Username</th>
                                         <th>Email</th>
-                                        <th>ID</th>
-                                        <th>Role</th>
+                                        <th>Phone number</th>
+                                        <th>Address</th>
+                                        <th>Order Confirmed?</th>
+                                        <th>Order Type</th>
+                                        <th>Order Total</th>
                                         <td>Date Created</td>
                                        
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($users as $user)
+                                    @forelse ($onliners as $order)
                                     <tr>
-                                     <td>{{$user->username}}</td>
-                                     <td>{{$user->email}}</td>
-                                     <td>{{$user->nat_id}}</td>
-                                     <td>{{$user->role}}</td>
-                                     <td>{{$user->created_at}}</td>
+                                     <td>{{$order->username}}</td>
+                                     <td>{{$order->email}}</td>
+                                     <td>{{$order->phone_number}}</td>
+                                     <td>{{$order->address}}</td>
+                                     <td>YES</td>
+                                     <td>{{$order->transfer}}</td>
+                                     <td>{{$order->total}}</td>
+                                     <td>{{$order->created_at}}</td>
                                     </tr>
-                                    @endforeach
+                                    @empty
+                                        <p>No Orders</p>
+                                    @endforelse
                                    
                              </tbody>
-                            </table>
-                        </div>
+                            </table>                        </div>
                     </div>
 
                 </div>

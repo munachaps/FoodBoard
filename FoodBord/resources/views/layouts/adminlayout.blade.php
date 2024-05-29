@@ -4,7 +4,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-    <title>KeinzFoodOrdering| Home</title>
+    <title>Keinz | {{Auth::user()->username}}</title>
 
 
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
         content="FoodOrdering Admin" />
     <meta name="keywords"
         content="My Project">
-    <meta name="author" content="" />
+    <meta name="author" content="Keinz" />
 
     <link rel="icon" href="https://colorlib.com/polygon/admindek/files/assets/images/favicon.ico"
         type="image/x-icon">
@@ -54,7 +54,7 @@
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
                     <div class="navbar-logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img class="img-fluid" src="{{asset('img/foodlogo.jpeg')}}" height="100" width="100" alt="Theme-Logo" />
                         </a>
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
@@ -306,13 +306,13 @@
                                         </a>
                                         <ul class="pcoded-submenu">
                                             <li class=" pcoded-hasmenu">
-                                                <a href="" class="waves-effect waves-dark">
+                                                <a href="{{route('admin.view-users')}}" class="waves-effect waves-dark">
                                                     <span class="pcoded-mtext">View Users</span>
                                                 </a>
 
                                             </li>
                                             <li class=" pcoded-hasmenu">
-                                                <a href="" class="waves-effect waves-dark">
+                                                <a href="{{route('admin.add-users')}}" class="waves-effect waves-dark">
                                                     <span class="pcoded-mtext">Add Users</span>
                                                 </a>
 

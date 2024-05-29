@@ -45,6 +45,12 @@ Route::get('order-success',[OrdersController::class,'orderSuccess'])->name('orde
 
 Route::middleware(["auth:admin"])->group(function () {
     Route::get('/admin/home', [HomeController::class,'index'])->name('admin.home');
+    Route::get('/admin/view-users', [HomeController::class,'viewUsers'])->name('admin.view-users');
+    Route::get('/admin/add-users', [HomeController::class,'addUsers'])->name('admin.add-users');
+    Route::post('/admin/creat-users', [HomeController::class,'createUsers'])->name('admin.create-users');
+    Route::get('/admin/reviews', [HomeController::class,'viewReviews'])->name('admin.reviews');
+    Route::get('/admin/cash-orders', [HomeController::class,'viewCashOrders'])->name('admin.cash-orders');
+    Route::get('/admin/online-orders', [HomeController::class,'viewOnlineOrders'])->name('admin.online-orders');
     Route::get('/logout',[LoginController::class,'logout'])->name('logout');
    
 });

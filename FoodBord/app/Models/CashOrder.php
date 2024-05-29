@@ -13,7 +13,7 @@ class CashOrder extends Model
         'transfer',
         'total' ,
         'username',
-        'phone-number',
+        'phone_number',
         'email',
         'address',
         'message',

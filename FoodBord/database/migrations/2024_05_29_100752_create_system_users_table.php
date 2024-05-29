@@ -11,16 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cash_orders', function (Blueprint $table) {
+        Schema::create('system_users', function (Blueprint $table) {
             $table->id();
-            $table->string('transfer');
-            $table->string('total');
             $table->string('username');
-            $table->string('phone_number');
-            $table->string('email');
-            $table->string('address');
-            $table->string('message');
-            $table->string('terms');
+            $table->string('email')->unique();
+            $table->string('role');
+            $table->string('nat_id');
+            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('approved_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cash_orders');
+        Schema::dropIfExists('system_users');
     }
 };

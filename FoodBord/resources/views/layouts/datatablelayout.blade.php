@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<!-- Mirrored from colorlib.com/polygon/admindek/default/dt-ext-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2019 16:09:33 GMT -->
 <!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-    <title>Keinz | Admin </title>
+    <title>Keinz | {{Auth::user()->username}}</title>
 
 
     <!--[if lt IE 10]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description"
-        content=" Admin manager for food ordering" />
+        content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
     <meta name="keywords"
         content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
-    <meta name="author" content="keinz" />
+    <meta name="author" content="colorlib" />
 
     <link rel="icon" href="https://colorlib.com/polygon/admindek/files/assets/images/favicon.ico"
         type="image/x-icon">
@@ -37,16 +37,17 @@
 
     <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-
     <link rel="stylesheet" type="text/css" href="../assets/css/icofont.css">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/morris.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/datatables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/buttons.datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.datatables.css">
 
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/pages.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/widget.css" />
-    <link rel="stylesheet" href="../assets/css/chartist.css" type="text/css" media="all" />
 </head>
 
 <body>
@@ -58,12 +59,11 @@
     <div id="pcoded" class="pcoded">
         <div class="pcoded-overlay-box"></div>
         <div class="pcoded-container navbar-wrapper">
-
-             <nav class="navbar header-navbar pcoded-header">
+            <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
                     <div class="navbar-logo">
-                        <a href="/">
-                            <img class="img-fluid" src="{{asset('img/foodlogo.jpeg')}}" height="100" width="100" alt="Theme-Logo" />
+                        <a href="{{route('admin.home')}}">
+                            <img class="img-fluid" src="{{asset('img/foodlogo.jpeg')}}" alt="Keinz" />
                         </a>
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
                             <i class="feather icon-menu icon-toggle-right"></i>
@@ -90,7 +90,7 @@
                             <li>
                                 <a href="#!"
                                     onclick="if (!window.__cfRLUnblockHandlers) return false; javascript:toggleFullScreen()"
-                                    class="waves-effect waves-light" data-cf-modified-2d8d78e876b340f9029c575b-="">
+                                    class="waves-effect waves-light" data-cf-modified-dd968ecfaf2317dc95cd417c-="">
                                     <i class="full-screen feather icon-maximize"></i>
                                 </a>
                             </li>
@@ -110,31 +110,60 @@
                                         </li>
                                         <li>
                                             <div class="media">
-                                                <img class="img-radius" src="{{asset('assets/jpg/avatar-4.jpg')}}"
+                                                <img class="img-radius" src="jpg/avatar-4.jpg"
                                                     alt="Generic placeholder image">
                                                 <div class="media-body">
                                                     <h5 class="notification-user">John Doe</h5>
-                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer
-                                                        elit.</p>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet,
+                                                        consectetuer elit.</p>
                                                     <span class="notification-time">30 minutes ago</span>
                                                 </div>
                                             </div>
                                         </li>
-                                      
+                                        <li>
+                                            <div class="media">
+                                                <img class="img-radius" src="jpg/avatar-3.jpg"
+                                                    alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Joseph William</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet,
+                                                        consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="img-radius" src="jpg/avatar-4.jpg"
+                                                    alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Sara Soudein</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet,
+                                                        consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
-                          
+                            <li class="header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
+                                        <i class="feather icon-message-square"></i>
+                                        <span class="badge bg-c-green">3</span>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="user-profile header-notification">
                                 <div class="dropdown-primary dropdown">
                                     <div class="dropdown-toggle" data-toggle="dropdown">
-                                        <img src="{{asset('assets/jpg/avatar-4.jpg')}}" class="img-radius" alt="User-Profile-Image">
+                                        
                                         <span>{{Auth::user()->username}}</span>
                                         <i class="feather icon-chevron-down"></i>
                                     </div>
                                     <ul class="show-notification profile-notification dropdown-menu"
-                                        data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                    
+                                        data-dropdown-in="fadeIn" data-dropdown-out="fadeOut"> 
                                         <li>
                                             <a href="{{route('logout')}}">
                                                 <i class="feather icon-log-out"></i> Logout
@@ -148,7 +177,8 @@
                 </div>
             </nav>
 
-            
+           
+
 
             <div class="showChat_inner">
                 <div class="media chat-inner-header">
@@ -285,6 +315,8 @@
                                             <span class="pcoded-mtext">Reviews</span>
                                         </a>
                                         <ul class="pcoded-submenu">
+                                           
+                                           
                                             <li class=" pcoded-hasmenu">
                                                 <a href="{{route('admin.reviews')}}" class="waves-effect waves-dark">
                                                     <span class="pcoded-mtext">Total Reviews</span>
@@ -298,169 +330,55 @@
                             </div>
                         </div>
                     </nav>
-
-                    <div class="pcoded-content">
-
-                        <div class="pcoded-inner-content">
-
-                            <div class="main-body">
-                                <div class="page-wrapper">
-                                    <div class="page-body">
-                                        <div class="row">
-                                            <div class="col-xl-3 col-md-6">
-                                              <div class="card prod-p-card card-red">
-                                                <div class="card-body">
-                                                  <div class="row align-items-center m-b-30">
-                                                    <div class="col">
-                                                      <h6 class="m-b-5 text-white">Total Users</h6>
-                                                      <h3 class="m-b-0 f-w-700 text-white">
-                                                        {{$users}}
-                                                      </h3>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                      <i
-                                                        class="fas fa-money-bill-alt text-c-red f-18"
-                                                      ></i>
-                                                    </div>
-                                                  </div>
-                                                  
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6">
-                                              <div class="card prod-p-card card-blue">
-                                                <div class="card-body">
-                                                  <div class="row align-items-center m-b-30">
-                                                    <div class="col">
-                                                      <h6 class="m-b-5 text-white">Total Reviews</h6>
-                                                      <h3 class="m-b-0 f-w-700 text-white">
-                                                        {{$reviews}}
-                                                      </h3>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                      <i
-                                                        class="fas fa-database text-c-blue f-18"
-                                                      ></i>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6">
-                                              <div class="card prod-p-card card-green">
-                                                <div class="card-body">
-                                                  <div class="row align-items-center m-b-30">
-                                                    <div class="col">
-                                                      <h6 class="m-b-5 text-white">
-                                                        Cash Orders
-                                                      </h6>
-                                                      <h3 class="m-b-0 f-w-700 text-white">
-                                                        {{$cash_orders}}
-                                                      </h3>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                      <i
-                                                        class="fas fa-dollar-sign text-c-green f-18"
-                                                      ></i>
-                                                    </div>
-                                                  </div>
-                                                 
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6">
-                                              <div class="card prod-p-card card-yellow">
-                                                <div class="card-body">
-                                                  <div class="row align-items-center m-b-30">
-                                                    <div class="col">
-                                                      <h6 class="m-b-5 text-white">Online Orders</h6>
-                                                      <h3 class="m-b-0 f-w-700 text-white">
-                                                        {{$online_orders}}
-                                                      </h3>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                      <i class="fas fa-tags text-c-yellow f-18"></i>
-                                                    </div>
-                                                  </div>
-                                               
-                                                </div>
-                                              </div>
-                                            </div>
-                    
-                                          </div>
-                                          <div class="row">
-
-
-                                         
-                                            <div class="col-md-12 col-lg-12">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Order Chart</h5>
-                                                        
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="morris-bar-chart"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                           
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="styleSelector">
-                            </div>
-                        </div>
+                     @yield('content')
+                    <div id="styleSelector">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+ 
+    <script data-cfasync="false" src="../assets/js/email-decode.min.js"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript" src="../assets/js/jquery.min.js"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript" src="../assets/js/jquery-ui.min.js"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript" src="../assets/js/popper.min.js"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript" src="../assets/js/bootstrap.min.js"></script>
 
-    <script type="ab836d322815de22d75b9415-text/javascript" src="../assets/js/jquery.min.js"></script>
-    <script type="ab836d322815de22d75b9415-text/javascript" src="../assets/js/jquery-ui.min.js"></script>
-    <script type="ab836d322815de22d75b9415-text/javascript" src="../assets/js/popper.min.js"></script>
-    <script type="ab836d322815de22d75b9415-text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/waves.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
 
-    <script src="../assets/js/waves.min.js" type="ab836d322815de22d75b9415-text/javascript"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript" src="../assets/js/jquery.slimscroll.js"></script>
 
-    <script type="ab836d322815de22d75b9415-text/javascript" src="../assets/js/jquery.slimscroll.js"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript" src="../assets/js/modernizr.js"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript" src="../assets/js/css-scrollbars.js"></script>
 
-    <script src="../assets/js/waves.min.js" type="ab836d322815de22d75b9415-text/javascript"></script>
+    <script src="../assets/js/jquery.datatables.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/datatables.buttons.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/jszip.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/pdfmake.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/vfs_fonts.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/datatables.responsive.min-2.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/buttons.print.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/buttons.html5.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/datatables.bootstrap4.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/datatables.responsive.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/responsive.bootstrap4.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
 
-    <script type="ab836d322815de22d75b9415-text/javascript" src="../assets/js/modernizr.js"></script>
-    <script type="ab836d322815de22d75b9415-text/javascript" src="../assets/js/css-scrollbars.js"></script>
+    <script src="../assets/js/responsive-custom.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/pcoded.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/vertical-layout.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script src="../assets/js/jquery.mcustomscrollbar.concat.min.js" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript" src="../assets/js/script.js"></script>
 
-    <script src="../assets/js/jquery.flot.js" type="2d8d78e876b340f9029c575b-text/javascript"></script>
-    <script src="../assets/js/jquery.flot.categories.js" type="2d8d78e876b340f9029c575b-text/javascript"></script>
-    <script src="../assets/js/curvedlines.js" type="2d8d78e876b340f9029c575b-text/javascript"></script>
-    <script src="../assets/js/jquery.flot.tooltip.min.js" type="2d8d78e876b340f9029c575b-text/javascript"></script>
-
-    <script src="../assets/js/amcharts.js" type="2d8d78e876b340f9029c575b-text/javascript"></script>
-    <script src="../assets/js/serial.js" type="2d8d78e876b340f9029c575b-text/javascript"></script>
-    <script src="../assets/js/light.js" type="2d8d78e876b340f9029c575b-text/javascript"></script>
-
-    <script src="../assets/js/raphael.min.js" type="ab836d322815de22d75b9415-text/javascript"></script>
-    <script src="../assets/js/morris.js" type="ab836d322815de22d75b9415-text/javascript"></script>
-
-    <script src="../assets/js/morris-custom-chart.js" type="ab836d322815de22d75b9415-text/javascript"></script>
-    <script src="../assets/js/pcoded.min.js" type="ab836d322815de22d75b9415-text/javascript"></script>
-    <script src="../assets/js/vertical-layout.min.js" type="ab836d322815de22d75b9415-text/javascript"></script>
-    <script src="../assets/js/jquery.mcustomscrollbar.concat.min.js" type="ab836d322815de22d75b9415-text/javascript"></script>
-    <script type="ab836d322815de22d75b9415-text/javascript" src="../assets/js/script.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="ab836d322815de22d75b9415-text/javascript"></script>
-    <script type="ab836d322815de22d75b9415-text/javascript">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="dd968ecfaf2317dc95cd417c-text/javascript"></script>
+    <script type="dd968ecfaf2317dc95cd417c-text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
 </script>
-    <script src="../assets/js/rocket-loader.min.js" data-cf-settings="ab836d322815de22d75b9415-|49" defer=""></script>
+    <script src="../assets/js/rocket-loader.min.js" data-cf-settings="dd968ecfaf2317dc95cd417c-|49" defer=""></script>
 </body>
 
 </html>

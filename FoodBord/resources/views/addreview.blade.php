@@ -77,7 +77,7 @@
 					<div class="row">
 						<div class="col-lg-8 animated-element">
 								<div class="box text-left ">
-									<form action="{{route('handle_comment')}}" method="POST" >
+									<form action="{{route('classify')}}" method="POST" >
 										@csrf
                                         <label for="phone_number">Phone number :</label>
                                         <input type="text" class="form-control" name="phone_number" placeholder="Enter phone number" required>
@@ -85,8 +85,12 @@
                                         <label for="phone_number">Email :</label>
                                         <input type="text" class="form-control" name="email" placeholder="Enter email" required>
                                         <hr>
-                                        <label for="comments">Write your comments:</label>
-                                        <textarea name="comments" class="form-control"  id="" cols="30" rows="10"></textarea>
+                                        <input type="text" class="form-control" name="train_data[]" value=" {{'This is good food','This is not good food'}} "  hidden>
+										
+										<input type="text" class="form-control" name="train_labels[]" value=" {{'Positive comment','Negative comment'}} "  hidden>
+										
+                                        <label for="test_data">Write your comments:</label>
+                                        <textarea name="test_data" class="form-control"  id="" cols="30" rows="10"></textarea>
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-6">

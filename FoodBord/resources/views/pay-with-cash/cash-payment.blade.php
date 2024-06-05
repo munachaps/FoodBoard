@@ -462,7 +462,7 @@
 													<div class="col-md-12">
 														<div class="form-group">
 															<label for="phoneCashPayment">Phone +12345</label>
-															<input id="phoneCashPayment" name="phone-number" class="form-control" type="text" data-parsley-pattern="^\+{1}[0-9]+$" required />
+															<input id="phoneCashPayment" name="phone_number" class="form-control" type="text" data-parsley-pattern="^\+{1}[0-9]+$" required />
 														</div>
 													</div>
 												</div>

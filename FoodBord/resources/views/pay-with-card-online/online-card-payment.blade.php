@@ -460,7 +460,7 @@
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="phoneOnlinePayment">Phone-number</label>
-                                                            <input id="phoneOnlinePayment" class="form-control" name="phone-number" type="text" data-parsley-pattern="^\+{1}[0-9]+$" required />
+                                                            <input id="phoneOnlinePayment" class="form-control" name="phone_number" type="text" data-parsley-pattern="^\+{1}[0-9]+$" required />
                                                         </div>
                                                     </div>
                                                 </div>

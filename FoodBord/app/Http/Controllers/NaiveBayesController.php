@@ -14,8 +14,7 @@ class NaiveBayesController extends Controller
 {
     public function classify(Request $request)
     {
-        $trainData = json_encode($request->input('train_data'));
-        $trainLabels = json_encode($request->input('train_labels'));
+       
         $testData = json_encode($request->input('test_data'));
 
         $reviews = Reviews::create([ 
@@ -27,18 +26,20 @@ class NaiveBayesController extends Controller
           $reviews->save();
 
         $pythonScriptPath = base_path('naive_bayes_classifier.py');
-        $process = new Process(['python3', $pythonScriptPath, $trainData, $trainLabels, $testData]);
+        $process = new Process(['python3',  $testData]);
         $process->run();
 
         // Check if the process was successful
         if (!$process->isSuccessful()) {
             throw new ProcessFailedException($process);
-            return redirect()->route('review-success'); 
         }
 
-        $output = $process->getOutput();
-        $predictions = json_decode($output, true);
-        
-        return response()->json(['predictions' => $predictions]);
+        else{
+            $output = $process->getOutput();
+            $predictions = json_decode($output, true);
+            return redirect()->route('review-success','result',['result'=>$output]); 
+            return response()->json(['predictions' => $predictions]);
+        }
+
     }
 }

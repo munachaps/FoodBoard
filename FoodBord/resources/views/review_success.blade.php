@@ -55,7 +55,6 @@
 		<main>
 			<!-- Hero -->
             <div class="row" style="margin-top: 10%">
-
             </div>
 			<div class="hero-home bg-mockup hero-bottom-border">
 				<div class="content">
@@ -63,8 +62,9 @@
                         <div class="box text-left ">
                             <div class="main-title">
                                 <span><em></em></span>
-                                <h2 id="orderFood">Thank you for the positive comments</h2>
-                                <p>Keep ordering food from us</p>
+                                <h2 id="orderFood">{{$result}}</h2>
+								<br>
+                                <h1><a href="{{route('home')}}" class="btn-1">Order again</a></h1>
                             </div>
                         </div>
                 </div>
@@ -85,8 +85,6 @@
 					</div>
 				</div>
 			</div>
-
-
 		</main>
 		<!-- Main End -->
 

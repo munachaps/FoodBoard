@@ -85,12 +85,8 @@
                                         <label for="phone_number">Email :</label>
                                         <input type="text" class="form-control" name="email" placeholder="Enter email" required>
                                         <hr>
-                                        <input type="text" class="form-control" name="train_data[]" value=" {{'This is good food','This is not good food'}} "  hidden>
-										
-										<input type="text" class="form-control" name="train_labels[]" value=" {{'Positive comment','Negative comment'}} "  hidden>
-										
                                         <label for="test_data">Write your comments:</label>
-                                        <textarea name="test_data" class="form-control"  id="" cols="30" rows="10"></textarea>
+                                        <textarea name="comments" class="form-control"  id="" cols="30" rows="10"></textarea>
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-6">

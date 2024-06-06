@@ -22,7 +22,7 @@ class LoginController extends Controller
         );
 
         if(!$validator){
-           return redirect('/loginerror');
+           return redirect()->route('error');
         }
 
         if(Auth::guard('admin')->attempt(array('email' => $request->input('email'), 'password' =>$request->input('password'))))
@@ -31,14 +31,13 @@ class LoginController extends Controller
         }
         else{
 
-            return redirect('/loginerror');
-
+            return redirect()->route('error');
         }
         
     }
 
     public function loginError(){
-        return view('/loginerror');
+        return view('auth.loginerror');
     }
 
     public function logout(Request $request) {

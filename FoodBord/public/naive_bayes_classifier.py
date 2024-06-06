@@ -54,7 +54,7 @@ def predict_review(sample_message):
     temp = cv.transform([final_message]).toarray()
     return classifier.predict(temp)
 
-result = ['Not good! Negetive Review','Good! Positive Review']
+result = ['Ohhh Shit! Negetive Review','Good! Positive Review']
 
 msg = 'The food is really good here.'
 if predict_review(msg):

@@ -17,6 +17,7 @@ class Orders extends Model
         'email',
         'address',
         'message',
-        'terms'
+        'terms',
+        'itemList'
     ];
 }

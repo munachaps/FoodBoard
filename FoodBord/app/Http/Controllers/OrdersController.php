@@ -20,18 +20,25 @@ class OrdersController extends Controller
             'transfer' => 'required|',
             'total' => 'required',
             'username'=>'required',
-            'phone-number' => 'required|',
+            'phone-number' => 'required',
             'email' => 'required',
             'address'=>'required',
             'message' => 'required|',
             'terms' => 'required',
+            'itemList' => 'required',
         ],    
     );
     if(!$validator){
         return redirect()->with('Missing details');
     }
 
-    $reviews = CashOrder::create([ 
+      // Decode the JSON array from the request
+    //   $order_details = json_decode($request->input('itemList'), true);
+      // Convert the array to a JSON string
+    //   $order = json_encode($order_details);
+
+ 
+    $reviews = Orders::create([ 
         'transfer' => $request->input('transfer'),
         'total' => $request->input('total'),
         'username' => $request->input('username'),
@@ -39,12 +46,18 @@ class OrdersController extends Controller
         'email' => $request->input('email'),
         'address' => $request->input('address'),
         'message' => $request->input('message'),
-        'terms' => $request->input('terms')
+        'terms' => $request->input('terms'),
+        'itemList' =>  json_encode($request->input('itemList'), true),
       ]);  
 
       $reviews->save();
 
-      return redirect()->route('order-success');
+      return response()->json([
+        'success' => true,
+        'redirect_url' => route('checkout')
+    ]);
+
+    //   return redirect()->route('order-success');
     }
 
     public function storeCashOrder(Request $request){
@@ -71,7 +84,8 @@ class OrdersController extends Controller
         'email' => $request->input('email'),
         'address' => $request->input('address'),
         'message' => $request->input('message'),
-        'terms' => $request->input('terms')
+        'terms' => $request->input('terms'),
+       
       ]);  
 
       $reviews->save();

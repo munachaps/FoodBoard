@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('message');
             $table->string('terms');
+            $table->text('itemList');
             $table->timestamps();
         });
     }

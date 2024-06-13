@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\ReviewsController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\NaiveBayesController;
 
 /*
@@ -39,10 +40,12 @@ Route::post('handlecomment', [ReviewsController::class, 'store'])->name('handle_
 Route::get('review-success', [ReviewsController::class, 'reviewSuccess'])->name('review-success');
 
 //Create orders as client
-Route::post('post_order', [OrdersController::class, 'store'])->name('post_order');
+Route::post('/post_order', [OrdersController::class, 'store'])->name('post_order');
 Route::post('cash-order', [OrdersController::class, 'storeCashOrder'])->name('cash-order');
 Route::get('order-success', [OrdersController::class, 'orderSuccess'])->name('order-success');
 Route::post('/classify', [NaiveBayesController::class, 'classify'])->name('classify');
+Route::get('/checkout', [PaymentController::class, 'checkout'])->name('checkout');
+Route::post('/charge', [PaymentController::class, 'charge'])->name('charge');
 
 Route::middleware(['auth:admin'])->group(function () {
     Route::get('/admin/home', [HomeController::class, 'index'])->name('admin.home');

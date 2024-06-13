@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Payments;
 use Illuminate\Http\Request;
 use App\Services\StripeService;
 
@@ -26,6 +26,14 @@ class PaymentController extends Controller
             'currency' => 'required|string',
             'source' => 'required|string', // e.g., the token or payment method ID
         ]);
+
+        $payment = Payments::create([ 
+            'amount' => $request->input('amount'),
+            'currency' => $request->input('currency'),
+            'source' => $request->input('soruce'),
+          ]);  
+    
+          $payment->save();
 
         try {
             $charge = $this->stripeService->createCharge([

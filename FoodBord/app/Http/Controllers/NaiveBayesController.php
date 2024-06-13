@@ -16,7 +16,6 @@ class NaiveBayesController extends Controller
     public function classify(Request $request)
     {
        
-      
         $reviews = Reviews::create([ 
             'email' => $request->input('email'),
             'phone_number' => $request->input('phone_number'),
